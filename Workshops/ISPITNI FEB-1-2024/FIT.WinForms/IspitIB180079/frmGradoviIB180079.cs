@@ -74,7 +74,7 @@ namespace FIT.WinForms.IspitIB180079
                     odabraniGrad.Status = true;
                 }
 
-                db.Entry(odabraniGrad).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                db.GradoviIB180079.Update(odabraniGrad);
             }
             UcitajGradove();
         }
@@ -103,8 +103,6 @@ namespace FIT.WinForms.IspitIB180079
 
                     txtNaziv.Clear();
                 }
-
-
                 UcitajGradove();
             }
         }
@@ -121,7 +119,14 @@ namespace FIT.WinForms.IspitIB180079
 
         private async void btnGenerisi_Click(object sender, EventArgs e)
         {
-            if (Validiraj2())
+            // 1. dio
+            // -- validacija
+            // -- async 
+            // -- sve sto je vezano za combo box
+            // -- postavljanje threada
+            // -- pokretanje threada
+
+            if (ValidirajMultithreading())
             {
                 Thread thread = new Thread(() => GenerisiGradove());
                 thread.Start();
@@ -130,7 +135,12 @@ namespace FIT.WinForms.IspitIB180079
 
         private void GenerisiGradove()
         {
-            Thread.Sleep(300);
+
+            // 2. dio
+            // -- kalkulacije
+            // -- pohrane 
+            // -- sleep
+
 
             var broj = int.Parse(txtBroj.Text);
             var status = chbStatus.Checked;
@@ -138,6 +148,7 @@ namespace FIT.WinForms.IspitIB180079
 
             for (int i = 0; i < broj; i++)
             {
+                Thread.Sleep(300);
                 var noviGrad = new GradoviIB180079()
                 {
                     Naziv = $"Grad {i+1}.",
@@ -151,6 +162,11 @@ namespace FIT.WinForms.IspitIB180079
 
             }
 
+            // 3. dio
+            // -- ispisi
+            // -- mbox 
+            // -- ucitavanje
+
             Action action = () =>
             {
                 UcitajGradove();
@@ -162,7 +178,7 @@ namespace FIT.WinForms.IspitIB180079
 
         }
 
-        private bool Validiraj2()
+        private bool ValidirajMultithreading()
         {
             return Validator.ProvjeriUnos(txtBroj,err2,Kljucevi.ReqiredValue);
         }
