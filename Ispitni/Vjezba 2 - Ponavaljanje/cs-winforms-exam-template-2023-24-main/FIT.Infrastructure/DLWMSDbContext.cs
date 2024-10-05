@@ -1,5 +1,5 @@
 ﻿using FIT.Data;
-
+using FIT.Data.IspitIB210178;
 using Microsoft.EntityFrameworkCore;
 
 using System.Configuration;
@@ -22,6 +22,11 @@ namespace FIT.Infrastructure
         }
     
         public DbSet<Student> Studenti { get; set; }
+        public DbSet<DrzaveIB210178> DrzaveIB210178 { get; set; }
+        public DbSet<GradoviIB210178> GradoviIB210178 { get; set; }
+        public DbSet<PolozeniPredmeti> PolozeniPredmeti { get; set; }
+        public DbSet<Semestri> Semestri { get; set; }
+        public DbSet<Predmeti> Predmeti { get; set; }
 
     }
 }
