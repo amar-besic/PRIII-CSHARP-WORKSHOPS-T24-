@@ -16,5 +16,12 @@ namespace FIT.WinForms.IspitIB210178
         {
             InitializeComponent();
         }
+
+        private void frmDrzaveIB210178_Load(object sender, EventArgs e)
+        {
+
+        }
+
+     
     }
 }
