@@ -27,11 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Izvjestaji\dsGradovi.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>dsGradovi.xsd</DependentUpon>
-    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -58,10 +53,6 @@
   <ItemGroup>
     <None Update="DLWMS.db">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </None>
-    <None Update="Izvjestaji\dsGradovi.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dsGradovi.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
 

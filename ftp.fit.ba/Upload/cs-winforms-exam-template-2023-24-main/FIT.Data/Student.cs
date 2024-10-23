@@ -1,5 +1,4 @@
-﻿using FIT.Data.IspitIB180079;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using FIT.Data.IspitIB210178;
 using System.Drawing;
 
 namespace FIT.Data
@@ -16,16 +15,13 @@ namespace FIT.Data
         public DateTime DatumRodjenja { get; set; }
         public bool Aktivan { get; set; }        
         public int SemestarId { get; set; }
-        public SemestriIB180079 Semestar { get; set; }
-        public int GradId { get; set; }
-        public GradoviIB180079 Grad { get; set; }
+        public int GradoviId { get; set; }
+        public GradoviIB210178 Gradovi { get; set; }
 
-        [NotMapped]
-        public string Prosjek { get; set; }
-        public string Drzava => Grad == null ? "" : Grad.Drzava.ToString();
+
         public override string ToString()
         {
-            return $"{Ime} {Prezime}";
+            return $"{Indeks} {Ime} {Prezime}";
         }
     }
 }
