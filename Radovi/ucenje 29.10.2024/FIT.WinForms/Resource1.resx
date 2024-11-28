@@ -130,7 +130,7 @@
     <value>Informacija</value>
   </data>
   <data name="ReqiredValue" xml:space="preserve">
-    <value>Obavezna vrijednosti</value>
+    <value>Obavezna vrijednost</value>
   </data>
   <data name="UsernameOrPasswordNotValid" xml:space="preserve">
     <value>Korisničko ime ili lozinka nisu validni!</value>

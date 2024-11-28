@@ -34,12 +34,9 @@ namespace FIT.WinForms
 
         private void btnDrzave_Click(object sender, EventArgs e)
         {
-            
-            
-            frmDrzaveIB210178 frmDrzaveIB210178 = new frmDrzaveIB210178();
+            frmDrzaveIB210178 frmDrzava = new frmDrzaveIB210178();
 
-            frmDrzaveIB210178.ShowDialog(); 
-
-        }
+            frmDrzava.ShowDialog();
+        } 
     }
 }

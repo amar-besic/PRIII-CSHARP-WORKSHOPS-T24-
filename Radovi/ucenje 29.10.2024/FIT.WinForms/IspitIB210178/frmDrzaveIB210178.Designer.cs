@@ -28,31 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnNovaDržava = new Button();
+            components = new System.ComponentModel.Container();
+            btnDržave = new Button();
             btnPrintaj = new Button();
             dgvDrzave = new DataGridView();
             Zastava = new DataGridViewImageColumn();
             Naziv = new DataGridViewTextBoxColumn();
-            BrojGradova = new DataGridViewTextBoxColumn();
+            Brojgradova = new DataGridViewTextBoxColumn();
             Status = new DataGridViewCheckBoxColumn();
-            btnGrad = new DataGridViewButtonColumn();
+            btnGradovi = new DataGridViewButtonColumn();
+            statusStrip1 = new StatusStrip();
+            tsslSat = new ToolStripStatusLabel();
+            timer = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)dgvDrzave).BeginInit();
+            statusStrip1.SuspendLayout();
             SuspendLayout();
             // 
-            // btnNovaDržava
+            // btnDržave
             // 
-            btnNovaDržava.Location = new Point(633, 29);
-            btnNovaDržava.Name = "btnNovaDržava";
-            btnNovaDržava.Size = new Size(133, 39);
-            btnNovaDržava.TabIndex = 0;
-            btnNovaDržava.Text = "Nova država";
-            btnNovaDržava.UseVisualStyleBackColor = true;
+            btnDržave.Location = new Point(631, 12);
+            btnDržave.Name = "btnDržave";
+            btnDržave.Size = new Size(140, 29);
+            btnDržave.TabIndex = 0;
+            btnDržave.Text = "Nova država";
+            btnDržave.UseVisualStyleBackColor = true;
+            btnDržave.Click += btnDržave_Click;
             // 
             // btnPrintaj
             // 
-            btnPrintaj.Location = new Point(633, 389);
+            btnPrintaj.Location = new Point(631, 356);
             btnPrintaj.Name = "btnPrintaj";
-            btnPrintaj.Size = new Size(133, 33);
+            btnPrintaj.Size = new Size(140, 29);
             btnPrintaj.TabIndex = 1;
             btnPrintaj.Text = "Printaj";
             btnPrintaj.UseVisualStyleBackColor = true;
@@ -62,14 +68,13 @@
             dgvDrzave.AllowUserToAddRows = false;
             dgvDrzave.AllowUserToDeleteRows = false;
             dgvDrzave.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvDrzave.Columns.AddRange(new DataGridViewColumn[] { Zastava, Naziv, BrojGradova, Status, btnGrad });
-            dgvDrzave.Location = new Point(12, 74);
+            dgvDrzave.Columns.AddRange(new DataGridViewColumn[] { Zastava, Naziv, Brojgradova, Status, btnGradovi });
+            dgvDrzave.Location = new Point(21, 47);
             dgvDrzave.Name = "dgvDrzave";
             dgvDrzave.ReadOnly = true;
             dgvDrzave.RowHeadersWidth = 51;
-            dgvDrzave.RowTemplate.Height = 29;
             dgvDrzave.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvDrzave.Size = new Size(754, 309);
+            dgvDrzave.Size = new Size(750, 303);
             dgvDrzave.TabIndex = 2;
             // 
             // Zastava
@@ -91,14 +96,14 @@
             Naziv.Name = "Naziv";
             Naziv.ReadOnly = true;
             // 
-            // BrojGradova
+            // Brojgradova
             // 
-            BrojGradova.DataPropertyName = "BrojGradova";
-            BrojGradova.HeaderText = "Broj gradova";
-            BrojGradova.MinimumWidth = 6;
-            BrojGradova.Name = "BrojGradova";
-            BrojGradova.ReadOnly = true;
-            BrojGradova.Width = 125;
+            Brojgradova.DataPropertyName = "Brojgradova";
+            Brojgradova.HeaderText = "Broj gradova";
+            Brojgradova.MinimumWidth = 6;
+            Brojgradova.Name = "Brojgradova";
+            Brojgradova.ReadOnly = true;
+            Brojgradova.Width = 125;
             // 
             // Status
             // 
@@ -109,41 +114,70 @@
             Status.ReadOnly = true;
             Status.Width = 125;
             // 
-            // btnGrad
+            // btnGradovi
             // 
-            btnGrad.DataPropertyName = "btnGrad";
-            btnGrad.HeaderText = "";
-            btnGrad.MinimumWidth = 6;
-            btnGrad.Name = "btnGrad";
-            btnGrad.ReadOnly = true;
-            btnGrad.Text = "Gradovi";
-            btnGrad.UseColumnTextForButtonValue = true;
-            btnGrad.Width = 125;
+            btnGradovi.DataPropertyName = "btnGradovi";
+            btnGradovi.HeaderText = "";
+            btnGradovi.MinimumWidth = 6;
+            btnGradovi.Name = "btnGradovi";
+            btnGradovi.ReadOnly = true;
+            btnGradovi.Resizable = DataGridViewTriState.True;
+            btnGradovi.Text = "Gradovi";
+            btnGradovi.UseColumnTextForButtonValue = true;
+            btnGradovi.Width = 125;
+            // 
+            // statusStrip1
+            // 
+            statusStrip1.ImageScalingSize = new Size(20, 20);
+            statusStrip1.Items.AddRange(new ToolStripItem[] { tsslSat });
+            statusStrip1.Location = new Point(0, 388);
+            statusStrip1.Name = "statusStrip1";
+            statusStrip1.Size = new Size(784, 22);
+            statusStrip1.TabIndex = 3;
+            statusStrip1.Text = "statusStrip1";
+            // 
+            // tsslSat
+            // 
+            tsslSat.Name = "tsslSat";
+            tsslSat.Size = new Size(0, 16);
+            // 
+            // timer
+            // 
+            timer.Enabled = true;
+            timer.Interval = 1000;
+            timer.Tick += timer_Tick;
             // 
             // frmDrzaveIB210178
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(801, 459);
+            ClientSize = new Size(784, 410);
+            Controls.Add(statusStrip1);
             Controls.Add(dgvDrzave);
             Controls.Add(btnPrintaj);
-            Controls.Add(btnNovaDržava);
+            Controls.Add(btnDržave);
             Name = "frmDrzaveIB210178";
             Text = "Države";
             Load += frmDrzaveIB210178_Load;
             ((System.ComponentModel.ISupportInitialize)dgvDrzave).EndInit();
+            statusStrip1.ResumeLayout(false);
+            statusStrip1.PerformLayout();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button btnNovaDržava;
+        private Button btnDržave;
         private Button btnPrintaj;
         private DataGridView dgvDrzave;
         private DataGridViewImageColumn Zastava;
         private DataGridViewTextBoxColumn Naziv;
-        private DataGridViewTextBoxColumn BrojGradova;
+        private DataGridViewTextBoxColumn Brojgradova;
         private DataGridViewCheckBoxColumn Status;
-        private DataGridViewButtonColumn btnGrad;
+        private DataGridViewButtonColumn btnGradovi;
+        private StatusStrip statusStrip1;
+        private ToolStripStatusLabel tsslSat;
+        private System.Windows.Forms.Timer timer;
     }
 }

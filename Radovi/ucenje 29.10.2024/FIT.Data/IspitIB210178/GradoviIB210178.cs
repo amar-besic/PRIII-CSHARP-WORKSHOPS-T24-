@@ -13,6 +13,7 @@ namespace FIT.Data.IspitIB210178
         public bool Status { get; set; }
         public int DrzavaId { get; set; }
         public DrzaveIB210178 Drzava { get; set; }
+
         public override string ToString()
         {
             return Naziv;

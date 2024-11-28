@@ -97,7 +97,7 @@ namespace FIT.WinForms {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Obavezna vrijednosti.
+        ///   Looks up a localized string similar to Obavezna vrijednost.
         /// </summary>
         internal static string ReqiredValue {
             get {

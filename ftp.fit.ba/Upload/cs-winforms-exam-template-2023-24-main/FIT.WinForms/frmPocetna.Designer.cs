@@ -31,21 +31,21 @@
             lblKonekcijaInfo = new Label();
             btnIzvjestaj = new Button();
             btnDrzave = new Button();
-            dtnPretraga = new Button();
+            btnPretraga = new Button();
             SuspendLayout();
             // 
             // lblKonekcijaInfo
             // 
             lblKonekcijaInfo.AutoSize = true;
             lblKonekcijaInfo.Font = new Font("Segoe UI", 15F);
-            lblKonekcijaInfo.Location = new Point(119, 82);
+            lblKonekcijaInfo.Location = new Point(114, 96);
             lblKonekcijaInfo.Name = "lblKonekcijaInfo";
             lblKonekcijaInfo.Size = new Size(0, 35);
             lblKonekcijaInfo.TabIndex = 0;
             // 
             // btnIzvjestaj
             // 
-            btnIzvjestaj.Location = new Point(159, 136);
+            btnIzvjestaj.Location = new Point(159, 142);
             btnIzvjestaj.Margin = new Padding(3, 4, 3, 4);
             btnIzvjestaj.Name = "btnIzvjestaj";
             btnIzvjestaj.Size = new Size(207, 31);
@@ -56,29 +56,29 @@
             // 
             // btnDrzave
             // 
-            btnDrzave.Location = new Point(97, 174);
+            btnDrzave.Location = new Point(114, 180);
             btnDrzave.Name = "btnDrzave";
-            btnDrzave.Size = new Size(160, 59);
+            btnDrzave.Size = new Size(135, 53);
             btnDrzave.TabIndex = 2;
             btnDrzave.Text = "Države i gradovi";
             btnDrzave.UseVisualStyleBackColor = true;
             btnDrzave.Click += btnDrzave_Click;
             // 
-            // dtnPretraga
+            // btnPretraga
             // 
-            dtnPretraga.Location = new Point(263, 174);
-            dtnPretraga.Name = "dtnPretraga";
-            dtnPretraga.Size = new Size(160, 59);
-            dtnPretraga.TabIndex = 3;
-            dtnPretraga.Text = "Pretraga";
-            dtnPretraga.UseVisualStyleBackColor = true;
+            btnPretraga.Location = new Point(270, 180);
+            btnPretraga.Name = "btnPretraga";
+            btnPretraga.Size = new Size(135, 53);
+            btnPretraga.TabIndex = 3;
+            btnPretraga.Text = "Pretraga";
+            btnPretraga.UseVisualStyleBackColor = true;
             // 
             // frmPocetna
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(514, 245);
-            Controls.Add(dtnPretraga);
+            Controls.Add(btnPretraga);
             Controls.Add(btnDrzave);
             Controls.Add(btnIzvjestaj);
             Controls.Add(lblKonekcijaInfo);
@@ -98,6 +98,6 @@
         private Label lblKonekcijaInfo;
         private Button btnIzvjestaj;
         private Button btnDrzave;
-        private Button dtnPretraga;
+        private Button btnPretraga;
     }
 }

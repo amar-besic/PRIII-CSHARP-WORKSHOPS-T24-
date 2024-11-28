@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FIT.WinForms {
+namespace FIT.WinForms.Properties {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace FIT.WinForms {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resource1 {
+    internal class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resource1() {
+        internal Resources() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace FIT.WinForms {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FIT.WinForms.Resource1", typeof(Resource1).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("FIT.WinForms.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,74 +61,42 @@ namespace FIT.WinForms {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to vaš korisnički nalog nije aktivan!.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static string AccountNotActive {
+        internal static System.Drawing.Bitmap _3177440 {
             get {
-                return ResourceManager.GetString("AccountNotActive", resourceCulture);
+                object obj = ResourceManager.GetObject("3177440", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Odabrani predmet je već dodat.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static string DuplicatedCourse {
+        internal static System.Drawing.Bitmap _5619264 {
             get {
-                return ResourceManager.GetString("DuplicatedCourse", resourceCulture);
+                object obj = ResourceManager.GetObject("5619264", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to @edu.fit.ba.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static string EmailDomain {
+        internal static System.Drawing.Bitmap bg_pocetna {
             get {
-                return ResourceManager.GetString("EmailDomain", resourceCulture);
+                object obj = ResourceManager.GetObject("bg pocetna", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Informacija.
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static string Info {
+        internal static System.Drawing.Bitmap logo_fit {
             get {
-                return ResourceManager.GetString("Info", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Obavezna vrijednosti.
-        /// </summary>
-        internal static string ReqiredValue {
-            get {
-                return ResourceManager.GetString("ReqiredValue", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Korisničko ime ili lozinka nisu validni!.
-        /// </summary>
-        internal static string UsernameOrPasswordNotValid {
-            get {
-                return ResourceManager.GetString("UsernameOrPasswordNotValid", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Upozorenje.
-        /// </summary>
-        internal static string Warning {
-            get {
-                return ResourceManager.GetString("Warning", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Dobro došli.
-        /// </summary>
-        internal static string Welcome {
-            get {
-                return ResourceManager.GetString("Welcome", resourceCulture);
+                object obj = ResourceManager.GetObject("logo.fit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

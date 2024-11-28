@@ -23,12 +23,9 @@ namespace FIT.WinForms
 
         private void frmPocetna_Load(object sender, EventArgs e)
         {
-            lblKonekcijaInfo.Text = $"Broj studenata u bazi -> {db.Studenti.Count()}";
+           
         }
 
-        private void btnIzvjestaj_Click(object sender, EventArgs e)
-        {
-            new frmIzvjestaji().Show();
-        }
+       
     }
 }

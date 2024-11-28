@@ -117,28 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="AccountNotActive" xml:space="preserve">
-    <value>vaš korisnički nalog nije aktivan!</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="logo.fit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.fit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DuplicatedCourse" xml:space="preserve">
-    <value>Odabrani predmet je već dodat</value>
+  <data name="5619264" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5619264.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="EmailDomain" xml:space="preserve">
-    <value>@edu.fit.ba</value>
+  <data name="3177440" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3177440.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Info" xml:space="preserve">
-    <value>Informacija</value>
-  </data>
-  <data name="ReqiredValue" xml:space="preserve">
-    <value>Obavezna vrijednosti</value>
-  </data>
-  <data name="UsernameOrPasswordNotValid" xml:space="preserve">
-    <value>Korisničko ime ili lozinka nisu validni!</value>
-  </data>
-  <data name="Warning" xml:space="preserve">
-    <value>Upozorenje</value>
-  </data>
-  <data name="Welcome" xml:space="preserve">
-    <value>Dobro došli</value>
+  <data name="bg pocetna" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg pocetna.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
