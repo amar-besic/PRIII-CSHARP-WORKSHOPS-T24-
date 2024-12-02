@@ -30,7 +30,7 @@
         {
             lblKonekcijaInfo = new Label();
             btnIzvjestaj = new Button();
-            brnDržave = new Button();
+            btnDržave = new Button();
             btnPretraga = new Button();
             SuspendLayout();
             // 
@@ -45,7 +45,7 @@
             // 
             // btnIzvjestaj
             // 
-            btnIzvjestaj.Location = new Point(153, 140);
+            btnIzvjestaj.Location = new Point(158, 133);
             btnIzvjestaj.Margin = new Padding(3, 4, 3, 4);
             btnIzvjestaj.Name = "btnIzvjestaj";
             btnIzvjestaj.Size = new Size(207, 31);
@@ -54,25 +54,23 @@
             btnIzvjestaj.UseVisualStyleBackColor = true;
             btnIzvjestaj.Click += btnIzvjestaj_Click;
             // 
-            // brnDržave
+            // btnDržave
             // 
-            brnDržave.Location = new Point(80, 178);
-            brnDržave.Name = "brnDržave";
-            brnDržave.Size = new Size(177, 65);
-            brnDržave.TabIndex = 2;
-            brnDržave.Text = "Države i gradovi";
-            brnDržave.UseVisualStyleBackColor = true;
-            brnDržave.Click += this.button1_Click;
+            btnDržave.Location = new Point(114, 171);
+            btnDržave.Name = "btnDržave";
+            btnDržave.Size = new Size(151, 62);
+            btnDržave.TabIndex = 2;
+            btnDržave.Text = "Države i gradovi";
+            btnDržave.UseVisualStyleBackColor = true;
             // 
             // btnPretraga
             // 
-            btnPretraga.Location = new Point(263, 178);
+            btnPretraga.Location = new Point(271, 171);
             btnPretraga.Name = "btnPretraga";
-            btnPretraga.Size = new Size(177, 65);
+            btnPretraga.Size = new Size(151, 62);
             btnPretraga.TabIndex = 2;
             btnPretraga.Text = "Pretraga";
             btnPretraga.UseVisualStyleBackColor = true;
-            btnPretraga.Click += button2_Click;
             // 
             // frmPocetna
             // 
@@ -80,7 +78,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(514, 245);
             Controls.Add(btnPretraga);
-            Controls.Add(brnDržave);
+            Controls.Add(btnDržave);
             Controls.Add(btnIzvjestaj);
             Controls.Add(lblKonekcijaInfo);
             Margin = new Padding(3, 4, 3, 4);
@@ -98,7 +96,7 @@
 
         private Label lblKonekcijaInfo;
         private Button btnIzvjestaj;
-        private Button brnDržave;
+        private Button btnDržave;
         private Button btnPretraga;
     }
 }
