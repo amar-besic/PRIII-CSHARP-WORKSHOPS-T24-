@@ -1,5 +1,4 @@
-﻿using FIT.Data.IspitIB210178;
-using System.Drawing;
+﻿using System.Drawing;
 
 namespace FIT.Data
 {
@@ -15,11 +14,6 @@ namespace FIT.Data
         public DateTime DatumRodjenja { get; set; }
         public bool Aktivan { get; set; }        
         public int SemestarId { get; set; }
-        public SemestriIB210178 Semestar { get; set; }
-
-        public int GradId { get; set; }
-
-        public GradoviIB210178 Grad { get; set; }
         public override string ToString()
         {
             return $"{Indeks} {Ime} {Prezime}";

@@ -15,7 +15,7 @@ namespace FIT.Data.IspitIB210178
         public int PredmetId { get; set; }
         PredmetiIB210178 Predmet {  get; set; }
         public int Ocjena { get; set; }
-        public DateAndTime DatumPolaganja { get; set; }
+        public DateTime DatumPolaganja { get; set; }
         public string Napomena { get; set; }
     }
 }

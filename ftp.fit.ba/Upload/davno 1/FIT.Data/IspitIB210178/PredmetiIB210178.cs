@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace FIT.Data.IspitIB210178
 {
-    public class SemestriIB210178 {
+    public class PredmetiIB210178
+    {
         public int Id { get; set; }
-        public string Oznaka { get; set; }
-        public string Opis { get; set; }
-        public int Aktivan { get; set; }
+        public string Naziv { get; set; }
+        public int Semestar { get; set; }
 
         public override string ToString()
         {
-            return Oznaka;
+            return Naziv;
         }
     }
 }
