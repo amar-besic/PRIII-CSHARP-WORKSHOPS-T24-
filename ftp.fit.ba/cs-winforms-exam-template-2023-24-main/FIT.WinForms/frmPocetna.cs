@@ -1,4 +1,5 @@
 ﻿using FIT.Infrastructure;
+using FIT.WinForms.IspitIB210178;
 using FIT.WinForms.Izvjestaji;
 
 using System;
@@ -29,6 +30,11 @@ namespace FIT.WinForms
         private void btnIzvjestaj_Click(object sender, EventArgs e)
         {
             new frmIzvjestaji().Show();
+        }
+
+        private void btnDržave_Click(object sender, EventArgs e)
+        {
+            new frmDrzaveIB210178().ShowDialog();
         }
     }
 }
