@@ -110,6 +110,7 @@
             btnNovaDrzava.TabIndex = 1;
             btnNovaDrzava.Text = "Nova Država";
             btnNovaDrzava.UseVisualStyleBackColor = true;
+            btnNovaDrzava.Click += btnNovaDrzava_Click;
             // 
             // btnPrintaj
             // 
